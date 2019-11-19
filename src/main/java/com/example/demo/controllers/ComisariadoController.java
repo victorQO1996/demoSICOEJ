@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
-
+/*
 @Controller
 @RequestMapping("/ejidatario")
 
@@ -34,4 +34,4 @@ public class ComisariadoController {
         return "rediret:/ejidatario/list";
     }
 }
-
+*/
