@@ -185,7 +185,7 @@
                     <br></br>
                     <div class="single-blog-page">
                         <div class="left-tags blog-tags">
-                            <br></br><form method="post" th:action="@{/uploat}" enctype="multipart/form-data">
+                            <br></br><form method="post" th:action="@{/upload}" enctype="multipart/form-data">
                             <div class="popular-tag left-side-tags left-blog">
                                 <center><h4>Subir PDF'S *</h4></center>
                                 <ul><center>
@@ -225,24 +225,24 @@
                             <div class="comment-respond">
                                 <h3 class="comment-reply-title">Datos Personales </h3>
                                 <span class="email-notes"></span>
-                                <form  method="post" th:action="@{/uploat}" enctype="multipart/form-data" id="fileUploatForm">
+                                <form action="a" method="post" th:action="@{/ejidatario/addEjidatario }" th:object="@{/ejidatario }" enctype="multipart/form-data" id="fileUploatForm">
 
                                     <div class="row">
                                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                             <p>Nombre *</p>
-                                            <input type="text" />
+                                            <input type="text" placeholder="nombre" th:field="(nombre)" />
                                         </div>
                                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                             <p>Fecha de Nacimiento*</p>
-                                            <input type="text" />
+                                            <input type="text" placeholder="fechaN" th:field="(fechaN)"  />
                                         </div>
                                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                             <p>Email *</p>
-                                            <input type="email" />
+                                            <input type="email" placeholder="email" th:field="(email)"  />
                                         </div>
                                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                             <p>CURP</p>
-                                            <input type="text" />
+                                            <input type="text" placeholder="curpbusqueda" th:field="(curpbusqueda)" />
                                         </div>
                                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                             <p>Direccion *</p>

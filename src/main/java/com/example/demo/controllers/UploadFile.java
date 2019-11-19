@@ -25,7 +25,7 @@ public class UploadFile {
         return "subirArchivos";
     }
 
-    @PostMapping("uploat")
+    @PostMapping("upload")
 
     public ResponseEntity<?> uploatFile(@RequestParam("file")MultipartFile file){
     if(file.isEmpty()){

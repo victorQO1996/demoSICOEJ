@@ -1,7 +1,7 @@
-spring:
+ spring:
   datasource:
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/testClase?useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/controlejidal
     username: root
     password: quintero19
     maxActive: 10
@@ -19,7 +19,7 @@ spring:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+         dialect: org.hibernate.dialect.MySQL5InnoDBDialect
 
   thymeleaf:
     cache: true
