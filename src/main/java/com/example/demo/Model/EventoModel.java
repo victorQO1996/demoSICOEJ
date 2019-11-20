@@ -4,7 +4,7 @@ package com.example.demo.Model;
 import lombok.Data;
 
 @Data
-public class ModelEvento {
+public class EventoModel {
 
     private int id;
 
@@ -17,5 +17,7 @@ public class ModelEvento {
     private String Descripción ;
 
     private String LugarEvento;
+
+
 
 }
