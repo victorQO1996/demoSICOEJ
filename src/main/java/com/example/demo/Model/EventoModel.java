@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Data
 public class EventoModel {
-
+//hola como
     private int id;
 
     private String NombreEvento;
