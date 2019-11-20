@@ -34,6 +34,11 @@ public class EventoController {
         return ViewConstant.RegistroEvento;
         }
 
+    @GetMapping("/calendario")
+    public String calendario(){
+        return "Calendario";
+    }
+
 
     @PostMapping("/addevento")
     public String addEvento(@ModelAttribute(name = "eventoModel") EventoModel eventoModel, Model model)throws Exception {

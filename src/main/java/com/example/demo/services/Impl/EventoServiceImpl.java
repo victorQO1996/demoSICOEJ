@@ -4,6 +4,7 @@ package com.example.demo.services.Impl;
 import com.example.demo.Components.EventoConverter;
 import com.example.demo.Model.EventoModel;
 import com.example.demo.entity.Evento;
+import com.example.demo.repository.EventoRepository;
 import com.example.demo.services.EventoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -23,10 +24,10 @@ public class EventoServiceImpl implements EventoService {
     @Autowired
     @Qualifier("eventoConverter")
     private EventoConverter eventoConverter;
-
+/*
     @Autowired
     @Qualifier("asistenteRepository")
-    private AsistenteRepository asistenteRepository;
+    private AsistenteRepository asistenteRepository;*/
 
 
 

@@ -18,9 +18,9 @@ public class ViewConstant {
     public static final String INDEX = "index";
 
    /* public static final String LUGAR_FORM = "RegistroLugar";
-    public static final String LUGARES = "ConsultaLugar";
+    public static final String LUGARES = "ConsultaLugar";*/
 
     public static final String CALENDARIO = "Calendario";
 
-    public static final String ASISTENCIA_FORM = "Asistencia";*/
+   /* public static final String ASISTENCIA_FORM = "Asistencia";*/
 }

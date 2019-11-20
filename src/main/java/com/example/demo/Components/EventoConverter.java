@@ -16,8 +16,8 @@ import java.util.List;
 
 public class EventoConverter {
 
-    @Autowired
-    @Qualifier("lugarServiceImpl")
+   /* @Autowired
+    @Qualifier("lugarServiceImpl")*/
 
 
     public Evento convertEventoModel2Evento(EventoModel eventoModel)throws Exception {
@@ -39,28 +39,16 @@ public class EventoConverter {
 
     public EventoModel convertEvento2EventoModel(Evento evento) {
 
-        evento.setId(eventoModel.getId());
-        evento.setNombreEvento(eventoModel.getNombreEvento());
-        evento.setFecha(fechf);
-        evento.setHorario(eventoModel.getHorario());
-        evento.setDescripción(eventoModel.getDescripción());
-        evento.setLugarEvento(eventoModel.getLugarEvento());
-
     EventoModel eventoModel = new EventoModel();
 
     eventoModel.setId(evento.getId());
     eventoModel.setNombreEvento(evento.getNombreEvento());
-    eventoModel.setNombre(evento.getNombre());
-    eventoModel.setFechaF(new SimpleDateFormat("yyyy-MM-dd hh:mm").format(evento.getFechaF()));
-    eventoModel.setFechaI(new SimpleDateFormat("yyyy-MM-dd hh:mm").format(evento.getFechaI()));
-    eventoModel.setLugar_id(evento.getLugar().getId());
-    eventoModel.setLugar_nombre(evento.getLugar().getNombre());
-    if(evento.getAsistentes() != null) {
-        for (Asistente asistente : evento.getAsistentes()) {
-            asistenteNames.add(asistente.getNombre() + " " + asistente.getApellido());
-        }
-    }
-    eventoModel.setAsistentes(asistenteNames);
+    eventoModel.setFecha(new SimpleDateFormat("dd-MM-yyyy").format(evento.getFecha()));
+    eventoModel.setHorario(evento.getHorario());
+    eventoModel.setDescripción(evento.getDescripción());
+    eventoModel.setLugarEvento(evento.getLugarEvento());
+
+
 
     return eventoModel;
     }
