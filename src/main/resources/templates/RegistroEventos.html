@@ -146,9 +146,9 @@
                     <div class="contact-icon text-center">
                         <div class="form contact-form">
                             <div id="errormessage"></div>
-                            <form action="" method="post" role="form" class="contactForm">
+                            <form action="#" th:action="@{/eventos/addevento}" th:object="${eventoModel}" method="post" role="form" class="contactForm">
                                 <div class="form-group">
-                                    <input type="text" name="NombreEvento" class="form-control" id="NombreEvento" placeholder="Nombre del Evento" data-rule="minlen:4" data-msg="Camp vacio, por favor ingresa el nombre del evento" />
+                                    <input type="text" name="NombreEvento" th:field="*{NombreEvento}" th:value="${NombreEvento}"class="form-control" id="NombreEvento" placeholder="Nombre del Evento" data-rule="minlen:4" data-msg="Camp vacio, por favor ingresa el nombre del evento" />
                                     <div class="validation"></div>
                                 </div>
                                 <div class="form-group">

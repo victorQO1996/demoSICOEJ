@@ -18,7 +18,7 @@ import java.util.List;
 
 
 @Controller
-@RequestMapping("")
+@RequestMapping("eventos")
 public class EventoController {
 
     @Autowired
@@ -35,8 +35,10 @@ public class EventoController {
         }
 
     @GetMapping("/calendario")
-    public String calendario(){
-        return "Calendario";
+    public String calendario(Model model) {
+        List<EventoModel> lista= eventoService.listAllEventos();
+        model.addAttribute("lista",lista);
+        return ViewConstant.CALENDARIO;
     }
 
 
