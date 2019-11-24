@@ -18,28 +18,26 @@ import java.util.List;
 
 
 @Controller
-@RequestMapping("eventos")
+@RequestMapping("evento")
 public class EventoController {
 
     @Autowired
     @Qualifier("eventoServiceImpl")
     private EventoService eventoService;
-
     private static final Log log = LogFactory.getLog(EventoController.class);
 
     @GetMapping("/registroEvento")
 
-
         public String inicio(){
-        return ViewConstant.RegistroEvento;
-        }
+        return "redirect:RegistroEventos";
+       }
 
-    @GetMapping("/calendario")
+   /* @GetMapping("/calendario")
     public String calendario(Model model) {
         List<EventoModel> lista= eventoService.listAllEventos();
         model.addAttribute("lista",lista);
         return ViewConstant.CALENDARIO;
-    }
+    }*/
 
 
     @PostMapping("/addevento")
