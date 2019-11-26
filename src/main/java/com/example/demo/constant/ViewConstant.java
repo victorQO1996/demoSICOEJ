@@ -14,7 +14,8 @@ public class ViewConstant {
     public static final String EVENTOS = "ConsultaEvento" ;
 
     */
-    public static final String RegistroEvento = "RegistroEventos";
+    public static final String Show= "EventosRegistrados";
+    public static final String RegistroEvento = "RegistroEvento";
     public static final String INDEX = "index";
 
    /* public static final String LUGAR_FORM = "RegistroLugar";

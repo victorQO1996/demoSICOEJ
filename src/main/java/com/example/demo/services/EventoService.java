@@ -8,6 +8,8 @@ import com.example.demo.entity.Evento;
 import java.util.List;
 
 public interface EventoService{
+
+
     public abstract EventoModel addEvento(EventoModel eventoModel) throws Exception;
 
     public abstract List<EventoModel> listAllEventos();

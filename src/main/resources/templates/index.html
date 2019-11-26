@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="utf-8">
   <title>Control Ejidal</title>
@@ -71,9 +71,15 @@
                   <li class="active">
                     <a class="page-scroll" href="#home">Inicio</a>
                   </li>
-                  <li>
-                    <a class="page-scroll" href="resources\templates\RegistroEventos.html">Eventos</a>
+                  <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Eventos<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+
+                      <li><a href=#>Registrar Evento</a></li>
+                      <li><a href=# >Eventos Registrados</a></li>
+
+                    </ul>
                   </li>
+
                   <li>
                     <a class="page-scroll" href="#services">Pagos/Cuotas</a>
                   </li>

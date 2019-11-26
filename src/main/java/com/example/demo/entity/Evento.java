@@ -1,26 +1,27 @@
 package com.example.demo.entity;
 
 import lombok.Data;
-import lombok.ToString;
+import lombok.Generated;
+
 
 import javax.persistence.*;
+
 import java.util.Date;
-import java.util.List;
-
-
 @Data
 @Entity
-@Table(name="evento")
+@Table(name="prueba2")
 public class Evento {
 
     @Id
+    @Generated
     @GeneratedValue
     @Column(name = "id")
-    private int id;
+    public int id;
+
     @Column(name = "NombreEvento")
     private String NombreEvento;
     @Column(name = "Fecha")
-    private Date Fecha;
+    private String Fecha;
     @Column(name = "Horario")
     private String Horario;
     @Column(name = "Descripción")
@@ -29,16 +30,8 @@ public class Evento {
     private String LugarEvento;
 
 
-    //@ToString.Exclude
-    //@ManyToMany(mappedBy = "eventos")
-    //private List<Asistente> asistentes;
 
-    //@ManyToOne
-    //@JoinColumn
-    //private Lugar lugar;
-
-
-    public Evento(String nombreEvento, Date fecha, String horario, String descripción, String lugarEvento) {
+    public Evento(String nombreEvento, String fecha, String horario, String descripción, String lugarEvento) {
         NombreEvento = nombreEvento;
         Fecha = fecha;
         Horario = horario;
@@ -48,5 +41,53 @@ public class Evento {
 
     public Evento(){
 
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getNombreEvento() {
+        return NombreEvento;
+    }
+
+    public void setNombreEvento(String nombreEvento) {
+        NombreEvento = nombreEvento;
+    }
+
+    public String getFecha() {
+        return Fecha;
+    }
+
+    public void setFecha(String fecha) {
+        Fecha = fecha;
+    }
+
+    public String getHorario() {
+        return Horario;
+    }
+
+    public void setHorario(String horario) {
+        Horario = horario;
+    }
+
+    public String getDescripción() {
+        return Descripción;
+    }
+
+    public void setDescripción(String descripción) {
+        Descripción = descripción;
+    }
+
+    public String getLugarEvento() {
+        return LugarEvento;
+    }
+
+    public void setLugarEvento(String lugarEvento) {
+        LugarEvento = lugarEvento;
     }
 }

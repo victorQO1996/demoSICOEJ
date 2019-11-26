@@ -21,13 +21,11 @@ public class EventoConverter {
 
 
     public Evento convertEventoModel2Evento(EventoModel eventoModel)throws Exception {
-        String[] fecha = eventoModel.getFecha().split("T");
-        Date fechf = new SimpleDateFormat("dd-MM-yyyy").parse(fecha[0] + " " + fecha[1]);
 
         Evento evento = new Evento();
         evento.setId(eventoModel.getId());
         evento.setNombreEvento(eventoModel.getNombreEvento());
-        evento.setFecha(fechf);
+        evento.setFecha(eventoModel.getFecha());
         evento.setHorario(eventoModel.getHorario());
         evento.setDescripción(eventoModel.getDescripción());
         evento.setLugarEvento(eventoModel.getLugarEvento());
@@ -43,8 +41,6 @@ public class EventoConverter {
 
     eventoModel.setId(evento.getId());
     eventoModel.setNombreEvento(evento.getNombreEvento());
-    eventoModel.setFecha(new SimpleDateFormat("dd-MM-yyyy").format(evento.getFecha()));
-    eventoModel.setHorario(evento.getHorario());
     eventoModel.setDescripción(evento.getDescripción());
     eventoModel.setLugarEvento(evento.getLugarEvento());
 

@@ -8,6 +8,7 @@
     <meta content="" name="description">
 
     <!-- Favicons -->
+
     <link href="img/favicon.png" rel="icon">
     <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
@@ -33,6 +34,7 @@
 
     <!-- Responsive Stylesheet File -->
     <link href="css/responsive.css" rel="stylesheet">
+
 
     <!-- =======================================================
       Theme Name: eBusiness
@@ -146,25 +148,25 @@
                     <div class="contact-icon text-center">
                         <div class="form contact-form">
                             <div id="errormessage"></div>
-                            <form action="#" th:action="@{evento/addevento}" th:object="${eventoModel}" method="post" role="form" class="contactForm">
+                            <form action="" method="post" role="form" class="contactForm">
                                 <div class="form-group">
-                                    <input type="text" name="NombreEvento" th:field="*{NombreEvento}" th:value="${NombreEvento}"class="form-control" id="NombreEvento" placeholder="Nombre del Evento" data-rule="minlen:4" data-msg="Camp vacio, por favor ingresa el nombre del evento" />
+                                    <input type="text" name="NombreEvento" class="form-control" id="NombreEvento" placeholder="Nombre del Evento" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                                     <div class="validation"></div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="date" name="Fecha" th:field="*{Fecha}" th:value="${Fecha}"class="form-control" id="Fecha" placeholder="Nombre del Evento" data-rule="minlen:4" data-msg="Camp vacio, por favor ingresa la fecha del evento" />
+                                    <input type="date" name="Fecha" class="form-control" id="Fecha" placeholder="Nombre del Evento" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                                     <div class="validation"></div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="time" name="Horario" th:field="*{Horario}" th:value="${Horario}"class="form-control" id="Horario" placeholder="Nombre del Evento" data-rule="minlen:4" data-msg="Camp vacio, por favor ingresa el horario del evento" />
+                                    <input type="time" name="Horario" class="form-control" id="Horario" placeholder="Nombre del Evento" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                                     <div class="validation"></div>
                                 </div>
                                 <div class="form-group">
-                                    <textarea class="form-control" name="Descripción" th:field="*{Descripción}" th:value="${Descripción}" rows="5" id="Descripción" data-rule="required" data-msg="Camp vacio, por favor ingresa el Descripción y Puntos a Tratar del evento" placeholder="Descripción y Puntos a Tratar"></textarea>
+                                    <textarea class="form-control" name="Descripción" rows="5" id="Descripción" data-rule="required" data-msg="Please write something for us" placeholder="Descripción y Puntos a Tratar"></textarea>
                                     <div class="validation"></div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" name="LugarEvento" th:field="*{LugarEvento}" th:value="${LugarEvento}" id="LugarEvento" placeholder="Lugar Del Evento" data-rule="minlen:4" data-msg="Camp vacio, por favor ingresa el lugar del evento" />
+                                    <input type="text" class="form-control" name="LugarEvento" id="LugarEvento" placeholder="Lugar Del Evento" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                                     <div class="validation"></div>
                                 </div>
 
